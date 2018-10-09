@@ -1,0 +1,151 @@
+// <-- ~~~~~~~~~~~~~~~~~~    Variables    ~~~~~~~~~~~~~~~~~~ --> //
+$txt-col: white;
+$txt-col2: #d4d2d2;
+$txt-col-trend: #c43235; //#5e0231; //#6534ff; //#b56969; //#6ed3cf;
+$txt-col-dark: #696969;
+$txt-col-darker: #a9abb0;
+$bg-col: #0c0c0c;
+$bg-col2: #111;
+$bg-col-nav: #222;
+$bg-col-input: #151515;
+$main-font: 'Cabin',
+sans-serif;
+$main-font-2: 'Montserrat',
+sans-serif;
+$font-2: "Times New Roman";
+// <-- ~~~~~~~~~~~~~~~~~~    Mixins    ~~~~~~~~~~~~~~~~~~ --> //
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+// <-- ~~~~~~~~~~~~~~~~~~    General Styles    ~~~~~~~~~~~~~~~~~~ --> //
+body {
+  font-family: $main-font;
+  position: relative;
+  background-color: black;
+  &::after {
+    content: "";
+    background: url("../img/he.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .singleWrapper {
+      margin: 0 auto;
+      width: 1300px;
+      height: 750px;
+      padding-top: 25px;
+      position: relative;
+      .slideItem {
+        width: 100%;
+        height: 725px;
+        position: absolute;
+        transition: all ease-in-out .9s;
+        opacity: 0;
+        .title {
+          width: 100%;
+          height: 65px; // border: 1px solid red;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h1 {
+            text-align: center;
+            font-size: 27px;
+            letter-spacing: 3px;
+            color: white;
+            font-weight: 500;
+            font-family: 'K2D', sans-serif !important;
+          }
+        }
+        .image {
+          width: 100%;
+          height: 660px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+      .active {
+        transition: all ease-in-out .9s;
+        opacity: 1;
+      }
+    }
+    .sliderWrapper {
+      width: 100%;
+      height: 210px;
+      margin: 20px auto 0;
+      display: flex;
+      padding-bottom: 10px;
+      .arrows {
+        height: 100%;
+        width: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all ease-in-out .2s;
+        i {
+          font-size: 140px;
+          color: #6e6673;
+        }
+        &:hover {
+          i {
+            color: #433849;
+          }
+        }
+      }
+      .slider {
+        height: 100%;
+        width: 1800px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        .slides {
+          height: 100%;
+          display: flex;
+          position: relative;
+          left: -77px;
+          transition: all ease-in-out .3s;
+          .slideItem {
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .origin {
+              position: absolute; // left: 6px;
+              top: 41px;
+              max-width: 158px;
+              max-height: 118px;
+              cursor: pointer;
+            }
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// <-- ~~~~~~~~~~~~~~~~~~    Imports    ~~~~~~~~~~~~~~~~~~ --> //
+@import 'reset';

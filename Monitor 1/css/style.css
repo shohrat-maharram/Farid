@@ -1,0 +1,262 @@
+body {
+  font-family: "Cabin", sans-serif;
+  position: relative;
+  background-color: black; }
+  body::after {
+    content: "";
+    background: url("../img/he.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: .2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+  body .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    body .wrapper .singleWrapper {
+      height: 100%;
+      width: 100%;
+      padding: 160px 50px 50px;
+      background-color: rgba(0, 0, 0, 0.91);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: none; }
+      body .wrapper .singleWrapper .content {
+        display: flex;
+        height: 770px; }
+        body .wrapper .singleWrapper .content .left {
+          max-height: 770px;
+          width: 50%;
+          z-index: 2; }
+          body .wrapper .singleWrapper .content .left .image {
+            max-height: 770px;
+            max-width: 100%;
+            display: none;
+            justify-content: center;
+            left: -1000px;
+            position: relative;
+            align-items: flex-start; }
+            body .wrapper .singleWrapper .content .left .image img {
+              max-height: 770px;
+              max-width: 100%;
+              object-fit: contain; }
+          body .wrapper .singleWrapper .content .left .active {
+            display: flex; }
+        body .wrapper .singleWrapper .content .right {
+          height: 100%;
+          width: 50%;
+          padding-left: 30px;
+          padding-right: 50px;
+          position: relative;
+          left: -1850px; }
+          body .wrapper .singleWrapper .content .right .text {
+            display: none;
+            padding: 15px 20px;
+            background-color: #FEFAD7; }
+            body .wrapper .singleWrapper .content .right .text p {
+              font-size: 24px;
+              color: #42423d;
+              line-height: 35px; }
+          body .wrapper .singleWrapper .content .right .active {
+            display: block; }
+      body .wrapper .singleWrapper .close {
+        position: relative;
+        top: -870px;
+        right: 0; }
+        body .wrapper .singleWrapper .close i {
+          color: #777165;
+          font-size: 65px;
+          opacity: 1;
+          text-shadow: none;
+          cursor: pointer; }
+    body .wrapper .contentWrapper {
+      padding-top: 30px;
+      width: 100%;
+      height: 100%; }
+      body .wrapper .contentWrapper .title {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        body .wrapper .contentWrapper .title h1 {
+          color: #7c795d;
+          font-family: 'K2D', sans-serif;
+          font-size: 45px;
+          font-weight: 500;
+          line-height: 48px;
+          background-color: #FEFAD7;
+          width: 670px;
+          height: 77px;
+          line-height: 70px;
+          text-align: center;
+          border-radius: 3px;
+          box-shadow: 4px 13px 58px 17px #484646b0; }
+      body .wrapper .contentWrapper .content {
+        height: 810px;
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 100px; }
+        body .wrapper .contentWrapper .content .commanProp {
+          height: 260px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          body .wrapper .contentWrapper .content .commanProp .commanItem {
+            width: 385px;
+            height: 110px;
+            background-color: #FFDB74;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0px 17px 51px 12px #383737b3;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 500;
+            font-family: 'K2D', sans-serif; }
+            body .wrapper .contentWrapper .content .commanProp .commanItem:focus {
+              outline: none;
+              box-shadow: 0 4px 47px 8px #757575; }
+        body .wrapper .contentWrapper .content .middleRow {
+          justify-content: space-around !important; }
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*# sourceMappingURL=style.css.map */
