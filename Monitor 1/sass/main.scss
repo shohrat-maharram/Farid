@@ -24,7 +24,7 @@ $font-2: "Times New Roman";
 body {
   font-family: $main-font;
   position: relative;
-  background-color: black;
+  // background-color: black;
 
   &::after {
     content: "";
@@ -138,8 +138,8 @@ body {
           line-height: 70px;
           text-align: center;
           border-radius: 3px;          
-          // box-shadow: 4px 13px 58px 17px #ababab;
-          box-shadow: 4px 13px 58px 17px #484646b0;
+          box-shadow: 4px 13px 58px 17px #ababab;
+          // box-shadow: 4px 13px 58px 17px #484646b0;
         }
       }
       .content {
@@ -161,8 +161,8 @@ body {
             align-items: center;
             padding: 0 10px;
             border-radius: 10px;
-            // box-shadow: 12px 23px 67px 8px #6b6666;
-            box-shadow: 0px 17px 51px 12px #383737b3;
+            box-shadow: 12px 23px 67px 8px #6b6666;
+            // box-shadow: 0px 17px 51px 12px #383737b3;
             
             border: none;
             cursor: pointer;
@@ -173,8 +173,8 @@ body {
             font-family: 'K2D', sans-serif;
             &:focus {
               outline: none;              
-              // box-shadow: 0 4px 47px 8px #b297b5;
-              box-shadow: 0 4px 47px 8px #757575;
+              box-shadow: 0 4px 47px 8px #b297b5;
+              // box-shadow: 0 4px 47px 8px #757575;
             }
           }
         }
