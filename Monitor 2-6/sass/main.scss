@@ -24,7 +24,7 @@ $font-2: "Times New Roman";
 body {
   font-family: $main-font;
   position: relative;
-  background-color: black;
+  // background-color: black;
   &::after {
     content: "";
     background: url("../img/he.jpg");

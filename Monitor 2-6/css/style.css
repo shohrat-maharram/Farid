@@ -1,7 +1,6 @@
 body {
   font-family: "Cabin", sans-serif;
-  position: relative;
-  background-color: black; }
+  position: relative; }
   body::after {
     content: "";
     background: url("../img/he.jpg");
@@ -96,7 +95,7 @@ body {
             justify-content: center; }
             body .wrapper .sliderWrapper .slider .slides .slideItem .origin {
               position: absolute;
-              top: 39px;
+              top: 41px;
               max-width: 158px;
               max-height: 118px;
               cursor: pointer; }
