@@ -3,7 +3,7 @@ body {
   position: relative; }
   body::after {
     content: "";
-    background: url("../img/he.jpg");
+    background: url("../img/he2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,18 +22,18 @@ body {
     body .wrapper .singleWrapper {
       margin: 0 auto;
       width: 1300px;
-      height: 750px;
-      padding-top: 25px;
+      height: 830px;
+      padding-top: 30px;
       position: relative; }
       body .wrapper .singleWrapper .slideItem {
         width: 100%;
-        height: 725px;
+        height: 800px;
         position: absolute;
         transition: all ease-in-out .9s;
         opacity: 0; }
         body .wrapper .singleWrapper .slideItem .title {
           width: 100%;
-          height: 65px;
+          height: 100px;
           display: flex;
           justify-content: center;
           align-items: center; }
@@ -41,12 +41,12 @@ body {
             text-align: center;
             font-size: 27px;
             letter-spacing: 3px;
-            color: white;
+            color: black;
             font-weight: 500;
             font-family: 'K2D', sans-serif !important; }
         body .wrapper .singleWrapper .slideItem .image {
           width: 100%;
-          height: 660px;
+          height: 700px;
           display: flex;
           justify-content: center;
           align-items: center; }
@@ -58,10 +58,10 @@ body {
         opacity: 1; }
     body .wrapper .sliderWrapper {
       width: 100%;
-      height: 210px;
+      height: 230px;
       margin: 20px auto 0;
       display: flex;
-      padding-bottom: 10px; }
+      padding-bottom: 30px; }
       body .wrapper .sliderWrapper .arrows {
         height: 100%;
         width: 100px;

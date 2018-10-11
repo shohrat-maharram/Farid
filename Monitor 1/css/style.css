@@ -3,12 +3,12 @@ body {
   position: relative; }
   body::after {
     content: "";
-    background: url("../img/he.jpg");
+    background: url("../img/he2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    opacity: .2;
+    opacity: .3;
     top: 0;
     left: 0;
     bottom: 0;
@@ -40,9 +40,11 @@ body {
           body .wrapper .singleWrapper .content .left .image {
             max-height: 770px;
             max-width: 100%;
+            width: 0%;
+            height: 0%;
             display: none;
             justify-content: center;
-            left: -1000px;
+            top: -950px;
             position: relative;
             align-items: flex-start; }
             body .wrapper .singleWrapper .content .left .image img {
@@ -57,7 +59,8 @@ body {
           padding-left: 30px;
           padding-right: 50px;
           position: relative;
-          left: -1850px; }
+          left: -650px;
+          opacity: 0; }
           body .wrapper .singleWrapper .content .right .text {
             display: none;
             padding: 15px 20px;
@@ -79,7 +82,7 @@ body {
           text-shadow: none;
           cursor: pointer; }
     body .wrapper .contentWrapper {
-      padding-top: 30px;
+      padding-top: 60px;
       width: 100%;
       height: 100%; }
       body .wrapper .contentWrapper .title {
@@ -102,12 +105,12 @@ body {
           border-radius: 3px;
           box-shadow: 4px 13px 58px 17px #ababab; }
       body .wrapper .contentWrapper .content {
-        height: 810px;
+        height: 880px;
         width: 100%;
         margin-top: 40px;
         padding: 0 100px; }
         body .wrapper .contentWrapper .content .commanProp {
-          height: 260px;
+          height: 293.33px;
           display: flex;
           justify-content: space-between;
           align-items: center; }
